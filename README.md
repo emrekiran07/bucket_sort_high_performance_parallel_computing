@@ -6,13 +6,16 @@ buckets, each of which is then sorted individually. This report focuses on the i
 and analysis of both sequential and parallel versions of Bucket-Sort.
 The parallel version utilizes OpenMP for parallelization to leverage multi-core
 processors, aiming to reduce sorting time significantly.
+
 2 Problem Description
 The task involves implementing both sequential and parallel versions of the Bucket-
 Sort algorithm in C. The goal is to evaluate the performance of both implementations
 under various conditions, including different input sizes and numbers of
 buckets. The performance metrics include running time and scalability. The implementation
 should ensure correctness, efficiency, and effective use of system resources.
+
 3 Solution Method
+
 3.1 Sequential Bucket-Sort
 The sequential version of Bucket-Sort involves the following steps:
 1. Variables Definition and Input: Initialize variables and allocate memory

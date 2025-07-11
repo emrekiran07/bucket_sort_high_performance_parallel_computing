@@ -37,15 +37,18 @@ qsort function. Dynamic scheduling helps balance the load among threads
 when bucket sizes vary.
 4. Validation: After sorting, the full output array is validated to ensure the
 sorting is correct.
+
 4 Experiments
 This section presents the experiments conducted to validate and evaluate the performance
 of the sequential and parallel versions of the Bucket Sort algorithm.
+
 4.1 Correctness of Code
 To ensure the correctness of the implemented sorting algorithms, a verification test
 was used in the code. After sorting, the output array is sequentially checked to confirm that each element is less than or equal to its successor. This verification
 step is executed automatically for both sequential and parallel versions and prints
 confirmation messages to notify whether the data is correctly sorted. All tested
 configurations confirmed correct sorting.
+
 4.2 Performance Evaluation
 Performance was evaluated based on execution time across various input configurations.
 Tests were run with an array size of 2,000,000 elements and bucket counts of
@@ -69,6 +72,7 @@ more evenly spread, the sorting becomes faster overall. We also tested different
 bucket counts. Increasing the number of buckets generally helped reduce sorting
 time, but after a certain point the overhead of managing many buckets started to
 cancel out the benefit.
+
 4.3.2 Parallel Implementation
 The parallel implementation used OpenMP to parallelize the sorting phase by
 assigning each bucket’s sort operation to a separate thread. To improve load
@@ -84,10 +88,12 @@ sequential version when the dataset size was large enough. For smaller arrays, t
 time spent managing threads sometimes canceled out the speed advantage of using
 parallelism. This shows how important it is to pick the right way to use parallel
 processing based on how big the data is.
+
 4.3.3 Speedup Analysis
 The speedup achieved by the parallel implementation is a crucial metric for evaluating
 its performance. Speedup is defined as the ratio of the execution time of
 the sequential algorithm to the execution time of the parallel algorithm.
+
 5 Conclusions
 The performance analysis of both the sequential and parallel implementations of
 the Bucket-Sort algorithm reveals several key insights. The sequential version

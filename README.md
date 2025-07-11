@@ -22,6 +22,7 @@ buckets.
 3. Storing Elements in Buckets: Place elements into buckets based on their
 values.
 4. Sorting Buckets: Sort each bucket using the quicksort algorithm.
+
 3.2 Parallel Bucket-Sort
 The parallel version of Bucket-Sort, implemented using OpenMP, involves the
 following steps:

@@ -58,11 +58,13 @@ Tests were run with an array size of 2,000,000 elements and bucket counts of
 10, 40, 100, and 400. Each configuration was tested under three distribution types:
 Uniform, Normal, and Exponential. The results below summarize the sorting time
 in seconds for each variant.
+
 4.3 Observation and Results
 The performance evaluation of the Bucket-Sort algorithm in both sequential and
 parallel implementations yielded several key observations and insights. Below, we
 discuss these observations in detail, based on the execution times recorded for
 varying bucket counts.
+
 4.3.1 Sequential Implementation
 In the sequential version, we observed that the execution time increased as the
 number of elements grew, which is expected. We tested the code using three different

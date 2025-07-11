@@ -110,18 +110,22 @@ larger datasets and an increased number of buckets. The results show that the
 parallel algorithm scales well with the number of threads up to a certain point, beyond
 which the speedup gain diminishes due to overheads such as synchronization
 and memory access contention.
+
 The parallel implementation achieves the best performance improvement for larger
 arrays and a higher number of buckets.
 The scalability of the parallel algorithm is limited by the number of physical cores
 available in the system. Beyond a certain number of threads, the overhead outweighs
 the benefits of parallelization.
+
 The choice of the number of buckets is critical for optimizing performance in both
 sequential and parallel versions. An optimal number of buckets leads to a balanced
 workload distribution and minimizes sorting time.
+
 Future work can focus on further optimizing the parallel implementation by reducing
 synchronization overhead and improving memory access patterns. Additionally,
 exploring hybrid parallelism using both OpenMP and MPI could yield even
 better performance for distributed memory systems.
+
 In conclusion, the parallel Bucket-Sort algorithm is an effective solution for sorting
 large datasets, leveraging the power of multi-core processors to achieve significant
 reductions in execution time. The study underscores the importance of parallel
